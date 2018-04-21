@@ -1,0 +1,197 @@
+@import url(reset.css);
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color:#f8f8f8;
+}
+
+#content{
+	position:relative;
+	display:flex;
+	font-size:16px;
+	font-weight: bold;
+	height:100vh;
+}
+
+#found{
+	background-color: #ffffff;
+	width:50%;
+	text-align: center;
+	padding:auto 0;
+}
+
+#lost{	
+	background-color:#2e3d4d;
+	text-align:center;
+	width:50%;
+}
+
+#found a,#lost a{
+	display:block;
+	margin-top:50%;
+	font-size:50px;
+	font-family: Georgia, "Times New Roman", sans-serif;
+}
+
+#found a{
+	color:#2e3d4d;	
+}
+
+#lost a{
+	color:white;
+}
+
+#found a:hover,#lost a:hover{
+	color:black;
+}
+
+#logo{
+	position:absolute;
+	left:40%;
+	background-image:url(../img/logo.png);
+}
+
+#head{
+	width:100%;
+	height:110px;
+	background-color:#F8F8F8;
+	border:3px solid #979797;
+	border-radius:2px;
+}
+
+.logo{
+	padding:17px 450px 200px;
+	width:400px;
+	height:75px;
+}
+
+
+#content__menu{
+	display:flex;
+	margin:0 auto;
+}
+
+#menu{
+	width:196px;
+	height:192px;
+	border:1px solid #979797;
+	background-color:#F8F8F8;
+	margin:70px 50px 0 0;
+	border-radius:3px;
+	display:flex;
+	flex-direction:column;
+	padding-top:40px;
+}
+
+#menu_items{
+	margin:0 auto;
+}
+
+#item_about{
+	width:697px;
+	height:535px;
+	border:1px solid #979797;
+	background-color:#F8F8F8;
+	margin-top:70px;
+	border-radius:3px;
+}
+
+#item{
+	display:flex;
+	margin-bottom:7px;
+}
+
+#item a{
+	padding-left:20px;
+	color:black;
+
+}
+
+#item a:hover{
+	color:green;
+}
+
+#item:first-child{
+	border-top:1px solid #979797;
+	padding-top:20px;
+	padding:;
+}
+
+.item_last{
+	border-bottom:1px solid #979797;
+	padding-bottom:20px;
+}
+
+#about{
+	display:flex;
+	flex-direction: column;
+}
+
+#item_about img{
+	width:645px;
+	height:300px;
+}
+
+.item_header{
+	display:flex;
+	margin:5px 7px 30px 20px;
+	padding-top:20px;
+}
+
+.item_header h3{
+	margin-left:500px;
+	color:green;
+	font-size:20px;
+}
+
+.item_picture{
+	padding:0 25px;
+}
+
+.item_description{
+	margin:30px 25px;
+	border-bottom:1px solid #e7e7e7;
+	padding-bottom:20px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
